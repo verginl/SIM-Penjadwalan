@@ -1,0 +1,62 @@
+#Utama{
+	height:680px;
+	width:100%;
+	margin:0 auto;
+	background:#F00; 	
+}
+.Header{
+	height:150px;
+	width:100%;
+	background-color:#090;	
+}
+.menu,
+.menu ul,
+.menu li,
+.menu a {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline:none;
+}
+.menu{
+	height:40px;
+	width:100%;
+	background-color:#000;
+}
+.menu li{
+	position:relative;
+	list-style:none;
+	float:left;
+	display:block;
+	height:40px;
+}
+.menu li a{
+	display:block;
+	padding:0 14px;
+	margin:6px 0;
+	line-height:28px;
+	text-decoration:none;
+	border-left:1px solid #393942;
+	border-right:1px solid #4f5058;
+	font-family:Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	font-size:13px;
+	color:#F3F3F3;
+}
+.menu li:first-child a {border-left:none;}
+.menu li:last-child a {border-right:none;}
+.konten{
+	height:auto;
+	width:100%;
+	overflow:scroll;
+}
+.footer{
+	text-align:center;
+	margin: 0 auto;
+	margin-top:375px;
+	height:35px;
+	width:100%;
+	background-color:#FFF;
+	
+}
+	

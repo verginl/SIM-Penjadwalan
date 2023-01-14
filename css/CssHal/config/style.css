@@ -1,0 +1,625 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0;
+	padding:0;
+	height:100%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+/*--
+#CounterHome{
+	 margin:0 auto;
+	 position:relative;
+	 width:100%;
+} --*/
+
+#CounterHome {
+	height: 100%;
+}
+body > #CounterHome {
+	height: auto;
+	min-height: 100%;
+}
+
+#CounterHeader{
+	height: 56px;
+	padding: 0px 48px;
+	background: url(../Image/header.png) repeat-x;
+	min-width: 900px;
+/*--	height:56px;
+	width:100%;
+	background:url(../image/header.png) repeat-x; --*/
+}
+
+#CounterHeader .FontHeader{
+	color:#FFF;
+	margin-top:15px;
+	float: left;
+	width:100%;
+}
+
+#CounterHeader .TitleHeader{
+	color: #FFF;
+	padding: 18px 0px 0px 0px;
+	float: left;
+	font-size:14px;	
+/*--	padding:0px 8px 2px 2px; --atas kanan bawah kiri
+	float:left;
+	font-size:18px;
+	text-align:left; --*/
+/*--	text-indent:30px; --*/
+	text-indent:2%;
+}
+
+#CounterHeader .TitleHeader1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	text-align: left;
+	padding: 22px 0px 0px 5px;
+	float: left;
+/* --	padding:3px 2px 2px 0px;
+	float:left;
+
+	text-align:left;
+	font-size:15px; --*/
+}
+
+#CounterHeader .TitleHeader2{
+	color: #FFF;
+	padding: 18px 0px 0px 0px;
+	float: left;
+	width:0 auto;
+	font-size:14px;	
+	text-indent:2%;
+}
+
+
+
+/*=============Utama===============*/
+#CounterContent{
+	padding: 10px 30px 0px 30px;
+	min-width: 900px;
+	padding-bottom: 128px;
+/*--	height:812px;	--*/
+
+}
+
+/*------------------------Drop Down---------------------------------*/ 
+#KotakMenu{
+	background: url(../Image/menu.png) repeat-x;
+	position: relative;
+	z-index: 1;
+	height: 34px;
+	clear: both;
+	padding: 0px 30px;
+	min-width: 900px;
+}
+.MenuKiri{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	float:left;
+}
+
+.MenuKanan{
+	float:right;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.img{
+	margin: 0;
+	padding: 0;
+	float: left;
+	text-indent:18px;
+	background: url(../Image/home.png) no-repeat center left;
+	margin-left:30px;
+}
+
+#KotakMenu ul li { /*---BuatBatas---*/
+    position: relative;/*---Buat Posisi drop down rapih--*/
+    list-style: none;
+    float: left;
+    display: block;
+    height: 40px;
+}
+
+#KotakMenu ul a {
+    display: block;
+    padding: 0 18px;
+	
+	margin-top:1px;
+    line-height: 32px;/*---Posisi batas tinggi--*/
+    text-decoration: none;
+ /*---
+    border-left: 1px solid #333;
+    border-right: 1px solid #666; Warna batas---*/
+ 
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+ 
+    color: #FFF;
+	text-shadow: 1px 1px 1px #000;	
+}
+
+.splite{
+	background: url(../Image/split.png) center left no-repeat;
+}
+
+.admin{/*-- untuk admin --*/
+	margin-right:40px;
+}
+
+.admin1{/*-- untuk petugas --*/
+	margin-right:90px;
+}
+
+/* .menu .admin{
+	margin-left:518px;
+
+
+	z-index: 400;
+	display: none;  Initally hidden 	
+} */
+
+.imgadmin{
+	background: url(../Image/admin-user.png) no-repeat center left;
+	float:left;
+	margin: 0;
+	padding: 0;
+	text-indent:5px;
+}
+
+#KotakMenu ul li:first-child a{
+	border-left: none; 
+}
+#KotakMenu ul li:last-child a{
+	border-left: none;
+}
+ 
+#KotakMenu ul li:hover > a{
+	color: #C60;/*---Hover menu---*/
+	
+}
+
+#KotakMenu ul ul {
+	margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+
+    position: absolute;
+    top: 34px;
+	left:0;
+ 
+    opacity: 0;/*---tampil dropdown---*/
+    background: url(../Image/transparent.png);
+ 
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+ 
+    -webkit-transition: opacity .25s ease .1s;/*---Kecepatan dropdown---*/
+    -moz-transition: opacity .25s ease .1s;
+    -o-transition: opacity .25s ease .1s;
+    -ms-transition: opacity .25s ease .1s;
+    transition: opacity .25s ease .1s;
+
+}
+ 
+#KotakMenu ul li:hover > ul{
+	opacity: 1; /*---Menampilakn drop down---*/
+}
+ 
+#KotakMenu ul ul li {
+    height: 0;
+	padding: 0;
+    overflow: hidden;/*---Menghidden menu dropdown---*/
+
+    -webkit-transition: height .25s ease .1s;
+    -moz-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+	
+}
+ 
+#KotakMenu ul li:hover > ul li {
+    height: 36px;
+    overflow: visible;
+    padding: 0;
+	width:100%;
+	
+}
+
+#KotakMenu ul ul li a:hover{
+	font-weight:bold;
+	background-color:#666;
+
+}
+
+#KotakMenu ul ul li a {
+    width: 120px;
+    padding: 2px 0px 2px 27px; /*--atas kanan bawah kiri-*/
+    margin: 0;
+    border: none;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+/*--    border-bottom: 1px solid #353539; untuk garis bawah*/
+}
+
+ 
+#KotakMenu ul ul li:last-child a{
+	border: none;
+}
+
+
+
+/*=============CounterContent================*/
+#BoxTitle{
+	width: 97%;
+/*--	height: 790px; --*/
+	height:100%;
+	padding-bottom:30px;
+	margin:auto;
+	padding-top:24px;
+}
+
+#CounterTitle {
+	height: 38px;
+	padding-left: 7px;
+	padding-right: 7px;
+	border: 1px solid #999;
+	background:url(../image/menu_bg.gif) repeat-x;
+	-webkit-border-radius: 7px 7px 0px 0px;
+	-moz-border-radius: 7px 7px 0px 0px;
+	-khtml-border-radius: 7px 7px 0px 0px;
+	border-radius: 7px 7px 0px 0px;
+}
+
+#CounterTitle h1 {
+	padding-top:11px;
+	margin: 0px;
+	color: #039;
+	font-size: 16px;
+	float: left;
+}
+
+#CounterTitle h1 img {
+	float: left;
+	padding-right:8px;
+	padding-left:4px;
+}
+
+#Content{/*--Kotak isi atau tabel--*/
+	border: solid 1px #999;
+	height:728px;
+}
+
+.isi{
+	padding-left:20px;
+	padding-top:15px;
+}
+
+.isi tr td {
+	padding: 10px;
+	color: #000;
+	font-size:14px;
+	border-bottom: 1px dotted #CCC; /*-- efek garis di tabel -- */
+}
+
+.text{
+	width: 100%;
+	height:25px;
+	text-indent:5px;
+	border: 1px solid rgb(178, 178, 178);
+
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	   -o-border-radius: 3px;
+	   -ms-border-radius: 3px;
+	        border-radius: 3px;
+	-webkit-box-shadow: 0px 1px 8px 0px rgba(168, 168, 168, 0.6) inset;/*--Untuk efek di text--*/
+	   -moz-box-shadow: 0px 1px 8px 0px rgba(168, 168, 168, 0.6) inset;
+	   -o-box-shadow: 0px 1px 8px 0px rgba(168, 168, 168, 0.6) inset;
+	   -ms-box-shadow: 0px 1px 8px 0px rgba(168, 168, 168, 0.6) inset;
+	        box-shadow: 0px 1px 8px 0px rgba(168, 168, 168, 0.6) inset;
+	-webkit-transition: all 0.2s linear;
+	   -moz-transition: all 0.2s linear;
+	     -o-transition: all 0.2s linear;
+		 -ms-transition: all 0.2s linear;
+	        transition: all 0.2s linear;
+}
+
+.text:active,
+.text:focus{
+	border: 1px solid rgba(91, 90, 90, 0.7);
+	background: rgba(238, 236, 240, 0.2);	
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	   -o-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	   -ms-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+} 
+
+.text1{
+	
+	height:25px;
+	text-indent:5px;
+	border: 1px solid rgb(178, 178, 178);
+
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	   -o-border-radius: 3px;
+	   -ms-border-radius: 3px;
+	        border-radius: 3px;
+	-webkit-box-shadow: 0px 1px 8px 0px rgba(168, 168, 168, 0.6) inset;/*--Untuk efek di text--*/
+	   -moz-box-shadow: 0px 1px 8px 0px rgba(168, 168, 168, 0.6) inset;
+	   -o-box-shadow: 0px 1px 8px 0px rgba(168, 168, 168, 0.6) inset;
+	   -ms-box-shadow: 0px 1px 8px 0px rgba(168, 168, 168, 0.6) inset;
+	        box-shadow: 0px 1px 8px 0px rgba(168, 168, 168, 0.6) inset;
+	-webkit-transition: all 0.2s linear;
+	   -moz-transition: all 0.2s linear;
+	     -o-transition: all 0.2s linear;
+		 -ms-transition: all 0.2s linear;
+	        transition: all 0.2s linear;
+}
+
+.text1:active,
+.text1:focus{
+	border: 1px solid rgba(91, 90, 90, 0.7);
+	background: rgba(238, 236, 240, 0.2);	
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	   -o-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	   -ms-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+} 
+
+.Search{
+	margin:5px auto;
+	margin-right:415px;
+	width:455px;
+	height: 43px;
+	border: 1px solid #999;
+	background: url(../Image/menu_bg.gif) repeat-x;
+	
+}
+
+.Search input[type=text]{
+	-webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+	border-radius: 8px 8px 8px 8px;
+	width:85%;
+	height:21px;
+	background-color:#FFF;
+	margin-top:7px;
+	margin-left:15px;
+	outline:none; /*Menghilangkan garis line text */
+}
+
+.img_cari{
+	background:url(../Image/search-dark.png) no-repeat center right 5px;
+	padding-right:22px;
+	padding-left:10px;
+/*	cursor:pointer; */
+}
+
+.button_cari{
+	background:url(../admin/image/btn_cari.jpg) no-repeat center right transparent;
+	padding-right:20px;
+	padding-left:10px;
+	border:0px;
+/*	cursor:pointer; */
+}
+
+.Kotak{
+	padding-top:55px;
+	padding-bottom:25px;
+}
+
+.Kotak2{
+	padding-top:30px;
+	padding-bottom:25px;
+}
+
+.Kotak3{
+	overflow:scroll;
+	height:720px;
+	width:100%;
+	padding-bottom:25px;
+	
+}
+
+.KotakLP{
+	padding-top:22px;
+	width:100%;
+	padding-bottom:25px;
+	
+}
+
+.line{
+	
+}
+
+
+/*----untuk warna table---*/
+tr:nth-child(even) .warna{
+	background-color:#CECECE;
+}   
+
+tr:nth-child(odd) .warna{
+	background-color:#E0E0E0;
+} 
+
+/*=============Table================*/
+.table{
+	
+    border-collapse:collapse;
+    border:1px solid #999;
+}
+
+.table tr td{
+	margin-left:20px;
+	margin-right:20px;
+    border-collapse:collapse;
+    border:1px solid #999;
+}
+
+.head{
+    background: rgb(206,220,231); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,220,231,1)), color-stop(100%,rgba(89,106,114,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
+}
+ 
+.head td {
+    padding:10px;
+    color:#000;
+    text-shadow:1px 1px 0px #CCC;
+    font-size:14px;
+}
+
+.data{
+	font-family:Arial, Helvetica, sans-serif;
+    background-color:#E0E0E0;
+}
+
+.data:hover{
+    background-color:#BADFFE;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+
+
+/*=============Button================*/
+.button {
+    width: 84px;
+    height: 25px;
+	
+    box-shadow: inset 0 1px rgba(255,255,255,0.3); /*--efek putih di submit--*/
+    cursor: pointer;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-ms-border-radius: 10px 10px 10px 10px;
+	-o-border-radius: 10px 10px 10px 10px;
+	-khtml-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 15px; /* Same as height */
+    text-align: center;
+    font-weight: bold;
+
+    background: #06F;
+    background: -moz-linear-gradient(#09F, #06F);
+    background: -ms-linear-gradient(#09F, #06F);
+    background: -o-linear-gradient(#09F, #06F);
+    background: -webkit-linear-gradient(#09F, #06F);
+    background: linear-gradient(#09F, #06F);
+    border: 1px solid #2b8bc7;
+    color: #FFF;
+    text-shadow: 0 1px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
+.button:hover {
+    box-shadow: 
+    inset 0 1px rgba(255,255,255,0.3), 
+    inset 0 20px 40px rgba(255,255,255,0.15);
+}
+
+
+
+
+
+/*=============Buttons===============*/
+.button {
+    width: 84px;
+    height: 25px;
+	text-indent:2px;
+
+    box-shadow: inset 0 1px rgba(255,255,255,0.3); /*--efek putih di submit--*/
+    cursor: pointer;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-ms-border-radius: 10px 10px 10px 10px;
+	-o-border-radius: 10px 10px 10px 10px;
+	-khtml-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 15px; /* Same as height */
+    text-align: center;
+    font-weight: bold;
+
+    background: #06F;
+    background: -moz-linear-gradient(#09F, #06F);
+    background: -ms-linear-gradient(#09F, #06F);
+    background: -o-linear-gradient(#09F, #06F);
+    background: -webkit-linear-gradient(#09F, #06F);
+    background: linear-gradient(#09F, #06F);
+    border: 1px solid #2b8bc7;
+    color: #FFF;
+    text-shadow: 0 1px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
+.button:hover {
+    box-shadow: 
+    inset 0 1px rgba(255,255,255,0.3), 
+    inset 0 20px 40px rgba(255,255,255,0.15);
+}
+
+
+/*=============footer===============*/
+#CounterFooter{
+	background: #FFF url(../Image/footer2.png) repeat-x;
+	height: 90px;
+	padding-top: 38px;
+	text-align: center;
+	font-size: 14px;
+	color: #000;
+	position: relative;
+	margin-top: -128px;
+	clear: both;
+	text-decoration:none;
+/*-----	
+	height:37px;
+	background: url(../Image/footer.png) repeat-x;
+	position:relative;
+	text-indent:30px;
+	line-height:40px;
+	color:#FFF;
+	clear:both; --*/
+}
+
+#CounterFooter a{
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	color:#000;
+}
+
+#CounterFooter a:hover{
+	text-decoration:none;
+	color:#000;
+}
+

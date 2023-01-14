@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #95a5a6;
+  background-image: url(../../../Foto/city-skyline-wallpapers-008.jpg);
+  font-family: 'Helvetica Neue', Arial, Sans-Serif;
+  background-size:cover;
+}
+html .login-wrap {
+  position: relative;
+  margin: 0 auto;
+  background: #FFF;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px #333;
+  padding: 15px;
+}
+html .login-wrap h2 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 2em;
+  margin-top: 10px;
+  color: #34495e;
+}
+html .login-wrap .form {
+  padding-top: 20px;
+}
+html .login-wrap .form input[type="text"],
+html .login-wrap .form input[type="password"]{
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 25px;
+  height: 40px;
+  border-radius: 5px;
+  outline: 0;
+  -moz-outline-style: none;
+  -webkit-outline-style: none;
+}
+html .login-wrap .form  input[type="submit"] {
+  	margin-left: 13%;
+  	margin-bottom: 25px;
+  
+  	outline: 0;
+  	-moz-outline-style: none;
+	-webkit-outline-style: none;
+  	padding: 6px;
+	margin-top: 10px;
+	width: 30%;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	
+}
+
+html .login-wrap .form input[type="text"],
+html .login-wrap .form input[type="password"] {
+  border: 1px solid #bbb;
+  padding: 0 0 0 10px;
+  font-size: 14px;
+}
+html .login-wrap .form input[type="text"]:focus,
+html .login-wrap .form input[type="password"]:focus {
+  border: 1px solid #3498db;
+}
+html .login-wrap .form a {
+  text-align: center;
+  font-size: 10px;
+  color: #3498db;
+}
+html .login-wrap .form a p {
+  padding-bottom: 10px;
+}
+html .login-wrap .form  input[type="submit"] {
+  background: #4AA3DF;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: box-shadow .4s ease;
+}
+html .login-wrap .form  input[type="submit"]:hover {
+  box-shadow: 1px 1px 5px #555;
+}
+html .login-wrap .form input[type="submit"]:active {
+  box-shadow: 1px 1px 7px #222;
+}
+html .login-wrap:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-linear-gradient(left, #0E98F0 0%, #0E98F0 0%, #0E98F0 0%, #0E98F0 0%, #0E98F0 0%, #0E98F0 0%, #0E98F0 0%, #0E98F0 0%, #0E98F0 0%, #0E98F0 100%);
+  background: -moz-linear-gradient(left, #0E98F0 0%, #0E98F0 0%, #0E98F0 0%, #0E98F0 0%, #0E98F0 0%, #0E98F0 0%, #0E98F0 0%, #0E98F0 0%, #0E98F0 0%, #0E98F0 100%);
+  height: 5px;
+  border-radius: 5px 5px 0 0;
+}

@@ -1,0 +1,13 @@
+[11-Nov-2015 09:19:34 Asia/Jakarta] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/techadm/public_html/SIMPenjadwalan/Absensi/karyawan/data_absen.php on line 61
+[11-Nov-2015 09:25:12 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /home/techadm/public_html/SIMPenjadwalan/Absensi/karyawan/report_visit_ts.php on line 387
+[11-Nov-2015 09:26:09 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /home/techadm/public_html/SIMPenjadwalan/Absensi/karyawan/edit_report_ts.php on line 377
+[12-Nov-2015 11:45:34 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /home/techadm/public_html/SIMPenjadwalan/Absensi/karyawan/report_visit_backbone.php on line 334
+[12-Nov-2015 11:45:47 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /home/techadm/public_html/SIMPenjadwalan/Absensi/karyawan/report_visit_backbone.php on line 334
+[12-Nov-2015 11:46:55 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /home/techadm/public_html/SIMPenjadwalan/Absensi/karyawan/edit_report_backbone.php on line 338
+[19-Nov-2015 08:55:33 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /home/techadm/public_html/SIMPenjadwalan/Absensi/karyawan/edit_report_backbone.php on line 339
+[19-Nov-2015 08:56:03 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /home/techadm/public_html/SIMPenjadwalan/Absensi/karyawan/edit_report_backbone.php on line 339
+[20-Nov-2015 12:52:28 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /home/techadm/public_html/SIMPenjadwalan/Absensi/karyawan/edit_report_backbone.php on line 339
+[20-Nov-2015 12:53:10 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /home/techadm/public_html/SIMPenjadwalan/Absensi/karyawan/edit_report_backbone.php on line 339
+[20-Nov-2015 13:06:56 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /home/techadm/public_html/SIMPenjadwalan/Absensi/karyawan/edit_report_backbone.php on line 339
+[20-Nov-2015 13:07:09 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /home/techadm/public_html/SIMPenjadwalan/Absensi/karyawan/edit_report_backbone.php on line 339
+[30-Nov-2015 13:57:04 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /home/techadm/public_html/SIMPenjadwalan/Absensi/karyawan/report_visit_backbone.php on line 335
